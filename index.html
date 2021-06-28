@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Arduino Integration</title>
+  <p>this is to test it works</p>
 </head>
 <body>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -26,36 +27,9 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-  
-var uploader = document.getElementById('uploader');
-var filebutton = document.getElementById('filebutton');
-
-filebutton.addEventListener('change', function(e) {
-var file = e.target.files[0];
-
-var storageRef = storageBucket('arduino-integration401').ref('sweet_gifs/' + file.name);
-
-storageRef.put(file);
-
-task.on('state_changed', )
-
-function progress(snapshot) {
-var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-uploader.value = percentage
-}
-
-function error(err) {
-
-}
-
-function complete() {
-
-}
-});
 </script>
 </body>
 <!-- <script src="/__/firebase/8.6.8/firebase-app.js"></script>
 <script src="/__/firebase/8.6.8/firebase-analytics.js"></script> -->
-
 <!-- <script src="/__/firebase/init.js"></script> -->
 </html>
