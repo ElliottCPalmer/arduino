@@ -5,32 +5,17 @@
   <p>this is to test it works</p>
 </head>
 <body>
-  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-functions.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
-    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
-
-  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-  <script src="/__/firebase/8.6.8/firebase-app.js"></script>
-
-  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
-  <script src="/__/firebase/8.6.8/firebase-analytics.js"></script>
-
-  <!-- Add Firebase products that you want to use -->
-  <script src="/__/firebase/8.6.8/firebase-auth.js"></script>
-  <script src="/__/firebase/8.6.8/firebase-firestore.js"></script>
-
-    <!-- Previously loaded Firebase SDKs -->
-
-  <!-- Initialize Firebase -->
-  <script src="/__/firebase/init.js"></script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
 
 
 <script>
-const firebase = ("firebase");
-// Required for side-effects
-("firebase/firestore");
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var firebaseConfig = {
@@ -45,15 +30,7 @@ const firebase = ("firebase");
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-  var db = firebase.firestore();
-
 </script>
-<!-- <script src="index.js"></script> -->
-<!-- <script src="/__/firebase/8.6.8/firebase-firestore.js"></script> -->
-<!-- <scrpt src="upload.js"></scrpt> -->
-<!-- <script src="/__/firebase/8.6.8/firebase-app.js"></script>
-<script src="/__/firebase/8.6.8/firebase-analytics.js"></script> -->
-<!-- <script src="/__/firebase/init.js"></script> -->
 
 
 </body>
