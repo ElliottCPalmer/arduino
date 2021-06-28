@@ -39,7 +39,7 @@ var filebutton = document.getElementById('filebutton');
 filebutton.addEventListener('change', function(e) {
 var file = e.target.files[0];
 
-var storageRef = firebase.storage().ref('sweet_gifs/' + file.name);
+var storageRef = storageBucket('arduino-integration401').ref('sweet_gifs/' + file.name);
 
 storageRef.put(file);
 
