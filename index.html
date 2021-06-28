@@ -7,9 +7,6 @@
 <body>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
 
 <script>
@@ -29,11 +26,23 @@
   firebase.analytics();
 
 </script>
-<script src="/__/firebase/8.6.8/firebase-firestore.js"></script>
+<script>
+const data = {
+  name: 'Los Angeles',
+  state: 'CA',
+  country: 'USA'
+};
+
+// Add a new document in collection "cities" with ID 'LA'
+const res = await db.collection('cities').doc('LA').set(data);
+
+
+</script>
+<!-- <script src="/__/firebase/8.6.8/firebase-firestore.js"></script> -->
 <!-- <scrpt src="upload.js"></scrpt> -->
-<script src="/__/firebase/8.6.8/firebase-app.js"></script>
+<!-- <script src="/__/firebase/8.6.8/firebase-app.js"></script>
 <script src="/__/firebase/8.6.8/firebase-analytics.js"></script> -->
-<script src="/__/firebase/init.js"></script>
+<!-- <script src="/__/firebase/init.js"></script> --> -->
 </body>
 
 </html>
