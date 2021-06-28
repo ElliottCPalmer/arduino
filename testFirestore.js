@@ -1,6 +1,6 @@
   var db = firebase.firestore();
   db.collection("users").add({
-    first: "Ada",
+    first: "AFa",
     last: "Lovelace",
     born: 1815
   })
