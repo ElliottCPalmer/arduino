@@ -1,5 +1,5 @@
 var db = firebase.firestore();
-db.collection("users").add({
+db.collection("commands").doc("powerstate")({
   first: "Ada",
   last: "Lovelace",
   born: 1815
