@@ -4,6 +4,14 @@
 // mountainsRef.name === mountainImageRef.name;
 // mountainsRef.fullPath === mountainImageRef.fullPath;
 
-ref.put(Users/Ellio/Documents/mountains.png).then((snapshot) => {
-    console.log('uploaded a file');
-});
+// put(Users/Ellio/Documents/mountains.png).then((snapshot) => {
+//     console.log('uploaded a file');
+// });
+
+const data = {
+    name: 'los angeles',
+    state: 'CA',
+    country: 'USA'
+};
+
+ const res = await db.collection('cities').doc('LA').set(data);
