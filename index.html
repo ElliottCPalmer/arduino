@@ -25,21 +25,8 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 </script>
-<script>
-  var db = firebase.firestore();
-  db.collection("commands").doc("power-state").set({
-    state: 0
-  })
 
-  // .then((docRef) => {
-  //   console.log("Document written with ID: ", docRef.id);
-  // })
-  // .catch((error) => {
-  //   console.error("Error adding document: ", error);
-
-  // })
-</script>
-<!-- <script src="testFirestore.js"></script> -->
+<script src="powerstate-1.js"></script>
 
 </body>
 </html>
