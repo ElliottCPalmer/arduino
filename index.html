@@ -27,10 +27,8 @@
 </script>
 <script>
   var db = firebase.firestore();
-  db.collection("users").doc("Alice").set({
-    first: "AFa",
-    last: "Lovelace",
-    born: 1815
+  db.collection("commands").doc("power-state").set({
+    state: 1
   })
 
   // .then((docRef) => {
